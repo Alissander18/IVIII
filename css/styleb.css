@@ -11,7 +11,7 @@ header {
     color: rgb(255, 255, 255);
     padding: 5px;
     text-align: center;
-    width: 100%; /* Ancho fijo para que sea cuadrado */
+    width: 100%;
 }
 
 nav ul {
@@ -31,7 +31,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffdd57; /* Color al pasar el mouse */
+    color: #ffdd57;
 }
 
 section {
@@ -50,33 +50,32 @@ section {
 }
 
 .servicio {
-    margin: 20px auto; /* Centrar el contenedor */
+    margin: 20px auto;
     padding: 15px;
     border: 1px solid #007bff;
-    border-radius: 15px; /* Bordes curvos */
+    border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
-    width: 500px; /* Ancho fijo para que sea cuadrado */
-    height: 480px; /* Altura fija para que sea cuadrado */
-    display: flex; /* Usar flexbox para centrar contenido */
-    flex-direction: column; /* Apilar elementos verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-    background-color: transparent; /* Fondo transparente */
-    cursor: pointer; /* Cambiar el cursor para indicar que es clickeable */
+    width: 500px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .servicio img {
-    max-width: 80%; /* Hacer la imagen más pequeña */
-    max-height: 80%; /* Ajustar la altura de la imagen */
-    border-radius: 15px; /* Aplicar bordes curvos a la imagen */
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 15px;
 }
 
 .servicio:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 123, 255, 0.5);
-
-
 }
+
 .servicio,
 .servicio:visited,
 .servicio:hover,
@@ -118,10 +117,9 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #0025fa; /* Color al pasar el mouse */
+    color: #0025fa;
 }
 
-/* Estilo para el cursor personalizado */
 .cursor {
     position: absolute;
     width: 10px;
@@ -132,37 +130,57 @@ footer ul li a:hover {
     transform: translate(-50%, -50%);
     transition: transform 0.1s;
 }
+
 .imagen {
     width: 400px;
     height: 450px;
     display: block;
     margin: 0 auto;
-
 } 
+
 #videoFondo {
-    position: fixed; /* Fija el video en el fondo */
-    top: 0; /* Asegura que esté alineado al borde superior */
-    left: 0; /* Asegura que esté alineado al borde izquierdo */
-    min-width: 100%; /* Asegura que cubra el ancho completo */
-    min-height: 100%; /* Asegura que cubra la altura completa */
-    width: auto; /* Mantiene la relación de aspecto */
-    height: auto; /* Mantiene la relación de aspecto */
-    z-index: -1; /* Envía el video detrás del contenido */
-    overflow: hidden; /* Evita el desbordamiento */
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
 }
 
 .IVIBANNER {
-    max-width: 950px; /* Asegura que la imagen no exceda el ancho del contenedor */
-    height: 250px; /* Mantiene la relación de aspecto de la imagen */
+    max-width: 950px;
+    height: 250px;
     object-fit: cover;
-    display: block; /* Centra la imagen en el contenedor */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    padding: 0; /* Espaciado arriba y abajo */
+    display: block;
+    margin: 0 auto;
+    padding: 0;
 }
 
 @media (max-width: 600px) {
     body {
         background-color: lightblue;
+    }
+
+    .servicio {
+        width: 100%; /* Ajusta el ancho al 100% */
+        height: auto; /* Altura automática para mantener proporciones */
+    }
+
+    .servicio img {
+        max-width: 100%; /* Las imágenes ocuparán todo el ancho */
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+
+    section {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    nav ul li {
+        display: block; /* Cambia a bloque para mejor visualización */
+        margin: 10px 0; /* Espaciado vertical entre elementos */
     }
 }
 
