@@ -49,7 +49,7 @@ section {
     to { opacity: 1; }
 }
 
-.Cursos {
+.servicio {
     margin: 20px auto;
     padding: 15px;
     border: 1px solid #007bff;
@@ -65,27 +65,27 @@ section {
     cursor: pointer;
 }
 
-.Cursos img {
+.servicio img {
     max-width: 40%;
     max-height: 40%;
     border-radius: 15px;
 }
 
-.Cursos:hover {
+.servicio:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 123, 255, 0.5);
 }
 
-.Cursos,
-.Cursos:visited,
-.Cursos:hover,
-.Cursos:active {
+.servicio,
+.servicio:visited,
+.servicio:hover,
+.servicio:active {
     text-decoration: none;
     color: inherit;
 }
 
-.Cursos h3,
-.Cursos p {
+.servicio h3,
+.servicio p {
     margin: 10px 0;
     text-align: center;
 }
