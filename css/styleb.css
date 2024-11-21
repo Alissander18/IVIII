@@ -151,13 +151,20 @@ footer ul li a:hover {
 }
 
 .IVIBANNER {
-    max-width: 950px;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    padding: 0;
+    max-width: 100%; /* Asegura que el banner no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    object-fit: cover; /* Cubre el área del contenedor sin distorsionar la imagen */
+    display: block; /* Centra la imagen en el contenedor */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    padding: 0; /* Espaciado arriba y abajo */
 }
+
+header {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+}
+
 
 @media (max-width: 600px) {
     body {
