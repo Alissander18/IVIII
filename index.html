@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleb.css">
+    <title>IVI</title>
+    <link rel="icon" href="https://i.imgur.com/gMENPKr.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+        <h1> 
+            <img src="https://i.imgur.com/o8wbM9I.jpeg" alt="Imagen de la empresa" class="IVIBANNER">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <video id="videoFondo" autoplay muted loop >
+        <source src="https://i.imgur.com/KOeHtaT.mp4" type="Video/mp4">
+    </video>
+    
+    <section id="sobre-nosotros">
+        <img src="https://i.imgur.com/SaGTwLa.gif" alt="Presentación de IVI" style="width: 900px; height: 360px;">
+    </section>
+    
+    <section id="Cursos">
+        <h2>Cursos</h2>
+        <div class="servicio">    
+       
+        <img src="https://i.imgur.com/9MDVzY6.jpeg"alt="imagen opcion" />
+        <h3>¿Es fácil o difícil el inglés?</h3>
+        <p>Mucha gente cree que el inglés es un idioma difícil de aprender, ¿pero realmente lo es? Cuando comparamos el inglés con algunos de los idiomas más hablados del mundo, podemos observar ciertas dificultades en la lengua inglesa, pero también hay aspectos bastante sencillos.</p>
+        <p></p>         
+        </div>
+        <!-- Agrega más servicios aquí -->
+    </section>
+    
+    <section id="reseñas">
+        <h2>Reseñas de Clientes</h2>
+        <div id="reseñas-container"></div>
+        <button onclick="mostrarFormulario()">Agregar Reseña</button>
+        <div id="form-container" style="display: none;">
+            <textarea id="reseña-input" placeholder="Escribe tu reseña aquí..."></textarea>
+            <button onclick="agregarReseña()">Enviar Reseña</button>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <h3>Redes Sociales</h3>
+        <ul>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/scriptc.js"></script>
+    <script src="js/registrp.js"></script>
+    <script src="js/reseña.js"></script>
+
+</body>
+</html>
