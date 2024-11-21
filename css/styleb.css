@@ -213,6 +213,10 @@ button {
     position: relative; /* Necesario para que el enlace cubra la sección */
 }
 
+.servicio {
+    position: relative; /* Asegura que el enlace cubra solo esta parte */
+}
+
 .enlace-invisible {
     position: absolute;
     top: 0;
