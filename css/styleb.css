@@ -263,3 +263,16 @@ textarea {
 .estrellas {
     color: gold;
 }
+
+#estrellas-container {
+    margin-top: 10px;
+}
+
+.estrella {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    cursor: pointer;
+}
+
+.estrella.seleccionada {
+    opacity: 0.5; /* Cambia la opacidad para mostrar que está seleccionada */
+}
