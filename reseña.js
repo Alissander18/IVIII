@@ -1,20 +1,26 @@
 function mostrarFormulario() {
-    const formContainer = document.getElementById('form-container');
-    formContainer.style.display = 'block'; // Muestra el formulario
+    document.getElementById('form-container').style.display = 'block';
 }
 
 function agregarReseña() {
-    const reseñaInput = document.getElementById('reseña-input');
-    const reseñasContainer = document.getElementById('reseñas-container');
+    const reseñaInput = document.getElementById('reseña-input').value;
+    const estrellas = document.getElementById('estrellas').value;
 
-    if (reseñaInput.value.trim() !== "") { // Verifica que no esté vacío
-        const nuevaReseña = document.createElement('div');
-        nuevaReseña.textContent = reseñaInput.value; // Agrega el texto de la reseña
-        reseñasContainer.appendChild(nuevaReseña); // Añade la reseña al contenedor
-
-        reseñaInput.value = ""; // Limpia el campo de entrada
-        document.getElementById('form-container').style.display = 'none'; // Oculta el formulario
-    } else {
-        alert("Por favor, escribe una reseña antes de enviar.");
+    if (reseñaInput.trim() === '') {
+        alert('Por favor, escribe una reseña.');
+        return;
     }
+
+    const reseñasContainer = document.getElementById('reseñas-container');
+    const nuevaReseña = document.createElement('div');
+    nuevaReseña.className = 'reseña';
+    nuevaReseña.innerHTML = `
+        <p>${reseñaInput}</p>
+        <p class="estrellas">${'★'.repeat(estrellas)}${'☆'.repeat(5 - estrellas)}</p>
+    `;
+
+    reseñasContainer.appendChild(nuevaReseña);
+    document.getElementById('reseña-input').value = '';
+    document.getElementById('estrellas').value = 5;
+    document.getElementById('form-container').style.display = 'none';
 }
