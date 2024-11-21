@@ -208,3 +208,16 @@ textarea {
 button {
     margin-top: 10px;
 }
+
+#Cursos {
+    position: relative; /* Necesario para que el enlace cubra la sección */
+}
+
+.enlace-invisible {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Asegura que el enlace esté por encima de otros elementos */
+}
