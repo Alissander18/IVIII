@@ -1,0 +1,9 @@
+.linea-cursor {
+    position: absolute;
+    width: 1px; /* Cambia este valor para ajustar el tamaño de la línea */
+    height: 15px; /* Grosor de la línea */
+    background: rgb(255, 0, 0);
+
+    transform: translate(-50%, -50%); /* Centra la línea */
+    transition: transform 0.1s;
+}
