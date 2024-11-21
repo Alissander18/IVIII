@@ -42,13 +42,18 @@
     
     <section id="reseñas">
         <h2>Reseñas de Clientes</h2>
-        <div id="reseñas-container"></div>
-        <button onclick="mostrarFormulario()">Agregar Reseña</button>
-        <div id="form-container" style="display: none;">
-            <textarea id="reseña-input" placeholder="Escribe tu reseña aquí..."></textarea>
-            <label for="estrellas">Calificación (1-5):</label>
-            <input type="number" id="estrellas" min="1" max="5" value="5" />
-            <button onclick="agregarReseña()">Enviar Reseña</button>
+    <div id="reseñas-container"></div>
+    <button onclick="mostrarFormulario()">Agregar Reseña</button>
+    <div id="form-container" style="display: none;">
+        <textarea id="reseña-input" placeholder="Escribe tu reseña aquí..."></textarea>
+        <div id="estrellas-container">
+            <img src="https://i.imgur.com/5r8h7ZV.png" alt="Estrella" class="estrella" data-value="1">
+            <img src="https://i.imgur.com/5r8h7ZV.png" alt="Estrella" class="estrella" data-value="2">
+            <img src="https://i.imgur.com/5r8h7ZV.png" alt="Estrella" class="estrella" data-value="3">
+            <img src="https://i.imgur.com/5r8h7ZV.png" alt="Estrella" class="estrella" data-value="4">
+            <img src="https://i.imgur.com/5r8h7ZV.png" alt="Estrella" class="estrella" data-value="5">
+        </div>
+        <button onclick="agregarReseña()">Enviar Reseña</button>
         </div>
     </section>
     
